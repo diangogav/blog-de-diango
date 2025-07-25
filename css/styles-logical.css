@@ -9,19 +9,35 @@ body {
   color: var(--white30);
   font-family: 'Nunito', sans-serif;
   background-color: #251F24;
+  margin: 0;
 }
 
 a {
   color: var(--white30);
 }
 
+.header {
+  position: sticky;
+  inset-block-start: -45px;
+}
+
+.header-content {
+  position: relative;
+  inset-block-start: 65px;
+}
+
 header {
   font-size: 14px;
   color: var(--white);
+  position: absolute;
+  inset-block-start: 0;
+  inset-inline-start: -208px;
+  inline-size: 188px;
 }
 
 header li {
   color: var(--white20);
+  margin-block-end: 16px;
 }
 
 header a {
@@ -39,21 +55,22 @@ nav details summary {
 }
 
 h1 {
-  /* font-size: 60px; */
-  font-size: 3.75em;
-  font-weight: normal;
+  font-size: 60px;
+  margin-block-start: 64px;
+  margin-block-end: 16px;
 }
 
 h2 {
   /* font-size: 32px; */
   font-size: 2em;
-  font-weight: normal;
+  margin-block: 40px;
 }
 
 h3 {
   /* font-size: 24px; */
   font-size: 1.5em;
-  font-weight: normal;
+  font-weight: 600;
+  margin-block: 16px;
 }
 
 p {
@@ -63,6 +80,13 @@ p {
 
 pre {
   background-color: var(--white10);
+  padding: 40px;
+  overflow: auto;
+  border-radius: 8px;
+  border: 10px solid #5551FF;
+  box-shadow: -10px 10px 0 #ABAAF6;
+  margin-block-end: 30px;
+  border-start-start-radius: 30px;
 }
 
 p {
@@ -79,18 +103,58 @@ p {
   counter-reset: titleList;
 }
 
+.section-content img {
+  margin-block-start: 40px;
+  display: block;
+  /* max-width: 100%; */
+  max-inline-size: 100%;
+}
+
 .section-content h3 {
   counter-increment: titleList;
 }
 
 .section-content h3::before {
-  content: counter(titleList)
+  content: counter(titleList, decimal) ". ";
 }
 
-.section-content h3::after {
+/* .section-content h3::after {
   content: '';
   width: 32px;
   height: 4px;
   background: var(--white30);
   display: inline-block;
+} */
+
+hr {
+  margin-block: 40px;
+  border-color: rgba(97, 97, 97, 0.2);
 }
+
+blockquote {
+  margin-block-start: 80px;
+  margin-block-end: 63px;
+  border-radius: 8px;
+  padding: 24px;
+  line-height: 32px;
+  font-size: 24px;
+}
+
+blockquote p {
+  color: var(--white30)
+}
+
+.main hr {
+  display: none;
+}
+
+.main {
+  padding: 16px;
+}
+
+.wrapper {
+  max-inline-size: 902px;
+  margin: auto;
+}
+
+.main-content {}

@@ -235,17 +235,45 @@
           </ul>
         </section>
 
-        <h3>Modelo de caja</h3>
-        <img src="./images/img.png" alt="Leonidas" title="Leonidas" />
-
-        <h2>Notas</h2>
-        <h3>Menú desplegabe</h3>
-        <p> Se usan las etiquetas details y summary</p>
+        <div class="section-content">
+          <h2>Videos de referencia</h2>
+          <div class="slider">
+            <scroll-container class="slider-container">
+              <scroll-page class="slider-slide" id="content-1">
+                <iframe class="video" width="560" height="315"
+                  src="https://www.youtube.com/embed/5f5Ig_U2Bpk?si=lAKvXjXWFiPR68yM" title="YouTube video player"
+                  frameborder="0"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                  referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+              </scroll-page>
+              <scroll-page class="slider-slide" id="content-2">
+                <iframe class="video" width="560" height="315"
+                  src="https://www.youtube.com/embed/7nJz7jdMxCw?si=gdwVGgUAVaarj5Bz" title="YouTube video player"
+                  frameborder="0"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                  referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+              </scroll-page>
+            </scroll-container>
+            <div class="slider-bullet-list">
+              <a class="slider-bullet" href="#content-1"></a>
+              <a class="slider-bullet" href="#content-2"></a>
+            </div>
+          </div>
+        </div>
 
         <p>
           Si tienes alguna pregunta escríbeme a
           <a href="mailto:me@leonidasesteban.com">me@leonidasesteban.com</a>
         </p>
+
+        <div class="section-content">
+          <h2>Ingresa a nustro newsletter</h2>
+          <form action="#" class="form">
+            <input type="text" placeholder="Nombre">
+            <input type="email" required placeholder="Correo electrónico">
+            <input type="submit" required value="Suscribirme">
+          </form>
+        </div>
       </div>
     </div>
   </main>

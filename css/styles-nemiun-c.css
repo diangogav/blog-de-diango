@@ -122,6 +122,7 @@ pre {
   line-height: 24px;
   padding: 16px;
   color: var(--gray30);
+  border-radius: 8px;
 }
 
 .section-content ul {

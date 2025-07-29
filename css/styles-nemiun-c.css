@@ -133,3 +133,36 @@ pre {
   text-decoration: none;
   color: var(--gray20)
 }
+
+.slider {
+  margin-block-start: 16px;
+}
+
+.slider-container {
+  white-space: nowrap;
+  display: block;
+  overflow: hidden;
+  scroll-behavior: smooth;
+  font-size: 0;
+}
+
+.video {
+  margin: 0;
+  display: inline-block;
+  width: 100%;
+  height: auto;
+  aspect-ratio: 16/9;
+}
+
+.slider-bullet-list {
+  text-align: center;
+  margin-block-start: 16px;
+}
+
+.slider-bullet {
+  inline-size: 20px;
+  block-size: 20px;
+  border-radius: 50%;
+  display: inline-block;
+  background-color: var(--gray30);
+}

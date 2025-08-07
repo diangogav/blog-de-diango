@@ -57,6 +57,14 @@ h2 {
   margin-block-end: 16px;
 }
 
+.section-content h3 {
+  counter-increment: titleList;
+}
+
+.section-content h3::before {
+  content: counter(titleList, decimal) '. '
+}
+
 hr {
   display: none;
 }

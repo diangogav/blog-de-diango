@@ -24,10 +24,6 @@ body {
   margin: auto;
 }
 
-.main-content {
-  padding-inline: 16px;
-}
-
 .main-content>p {
   text-align: center;
 }
@@ -280,6 +276,7 @@ pre {
   border: 1px solid var(--blue10);
   color: white;
   border-radius: 90px;
+  padding: 0;
 }
 
 .form-group {
@@ -296,6 +293,7 @@ pre {
 
   .wrapper {
     max-inline-size: 903px;
+    margin: auto;
   }
 
   .hero {
@@ -314,8 +312,50 @@ pre {
   header {
     position: absolute;
     inset-block-start: 0;
-    inset-inline-end: -216px;
-    inset-block-start: 0;
+    inset-inline-end: -232px;
     inline-size: 208px;
+  }
+
+  h1 {
+    font-size: 60px;
+    margin-block-start: 64px;
+  }
+
+  hr {
+    margin-block: 64px;
+  }
+
+  blockquote {
+    text-align: start;
+    inline-size: 633px;
+    margin: auto;
+    margin-block: 64px;
+  }
+
+  h3 {
+    font-size: 24px;
+  }
+
+  .section-content:last-of-type {
+    inline-size: 640px;
+  }
+
+  .section-content:last-of-type h2 {
+    margin-block-end: 16px;
+    font-size: 24px;
+  }
+
+  .form {
+    display: block;
+  }
+
+  .form input[type="text"] {
+    inline-size: 279px;
+    display: inline-block;
+  }
+
+  .form-group {
+    inline-size: 343px;
+    display: inline-block;
   }
 }

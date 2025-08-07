@@ -8,8 +8,8 @@
 }
 
 .hero {
-  background-image: linear-gradient(to top, rgba(74, 0, 224, 0.6), rgba(142, 45, 226, 0.5)), url("../images/pattern-nemium-d.png");
-  height: 192px;
+  background-image: linear-gradient(to top, rgba(74, 0, 224, 0.6), rgba(142, 45, 226, 0.5)), url("../images/pattern-2.png");
+  block-size: 192px;
 }
 
 body {
@@ -17,13 +17,15 @@ body {
   margin: 0;
 }
 
-.main {
-  padding-inline: 16px;
-}
+.main {}
 
 .wrapper {
   max-inline-size: 328px;
   margin: auto;
+}
+
+.main-content {
+  padding-inline: 16px;
 }
 
 .main-content>p {
@@ -284,4 +286,36 @@ pre {
   margin-block-end: 16px;
   position: relative;
   height: 48px;
+}
+
+@media (min-width: 768px) {
+  .main {
+    padding-inline-start: 116px;
+    padding-inline-end: 115px;
+  }
+
+  .wrapper {
+    max-inline-size: 903px;
+  }
+
+  .hero {
+    height: 350px;
+  }
+
+  .header {
+    position: sticky;
+    inset-block-start: 20px;
+  }
+
+  .header-content {
+    position: relative;
+  }
+
+  header {
+    position: absolute;
+    inset-block-start: 0;
+    inset-inline-end: -216px;
+    inset-block-start: 0;
+    inline-size: 208px;
+  }
 }

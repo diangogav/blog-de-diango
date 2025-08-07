@@ -1,0 +1,287 @@
+:root {
+  --black10: rgba(0, 0, 0, 1);
+  --black20: rgba(0, 0, 0, 0.5);
+  --white10: white;
+  --blue10: rgba(85, 81, 255, 1);
+  --gray10: rgba(84, 84, 84, 1);
+
+}
+
+.hero {
+  background-image: linear-gradient(to top, rgba(74, 0, 224, 0.6), rgba(142, 45, 226, 0.5)), url("../images/pattern-nemium-d.png");
+  height: 192px;
+}
+
+body {
+  font-family: 'Rubik', sans-serif;
+  margin: 0;
+}
+
+.main {
+  padding-inline: 16px;
+}
+
+.wrapper {
+  max-inline-size: 328px;
+  margin: auto;
+}
+
+.main-content>p {
+  text-align: center;
+}
+
+p {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: var(--gray10);
+  letter-spacing: 0;
+}
+
+h1 {
+  font-weight: 700;
+  font-size: 28px;
+  line-height: 100%;
+  color: var(--black10);
+  margin-block-start: 40px;
+  margin-block-end: 16px;
+  text-align: center;
+}
+
+
+h2 {
+  font-weight: 400;
+  font-size: 32px;
+  line-height: 100%;
+  margin-block-start: 40px;
+  margin-block-end: 40px;
+}
+
+.section-content:nth-of-type(1),
+.section-content:nth-of-type(2) {
+  text-align: center;
+}
+
+.section-content:nth-of-type(2) img {
+  margin-block-start: 16px;
+  margin-block-end: 40px;
+}
+
+.section-content img {
+  display: block;
+  max-inline-size: 100%;
+  height: auto;
+  margin: auto;
+  margin-block-start: 40px;
+  margin-block-end: 16px;
+}
+
+hr {
+  margin-block: 40px;
+}
+
+hr:not(:first-of-type) {
+  display: none;
+}
+
+h3 {
+  margin-block-start: 40px;
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 100%;
+  color: var(--black10);
+  margin-block-end: 16px;
+}
+
+.section-content:first-of-type h3 {
+  margin-block-start: 16px;
+}
+
+p {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: var(--gray10);
+}
+
+.header {
+  margin-block-start: 40px;
+}
+
+summary {
+  font-size: 14px;
+  line-height: 24px;
+  font-weight: 700;
+  color: var(--black10);
+  /* margin-block-end: 16px; */
+}
+
+details {
+  margin-block-end: 16px;
+}
+
+details ol {
+  padding-inline-start: 0px;
+  color: var(--black10);
+  font-size: 14px;
+}
+
+details ol li {
+  font-weight: 400;
+  line-height: 24px;
+  /* margin-block-end: 16px; */
+  list-style-position: inside;
+  padding: 8px;
+}
+
+details ol li:hover {
+  background-color: var(--blue10);
+  color: var(--white10);
+}
+
+details ol li a {
+  color: inherit;
+  text-decoration: none;
+}
+
+details:not([open])>summary {
+  color: var(--black20);
+}
+
+blockquote {
+  border-inline-start: 4px solid var(--blue10);
+  margin-inline: 0;
+  padding-inline-start: 16px;
+  color: var(--black10);
+  text-align: start;
+}
+
+blockquote p {
+  font-size: 16px;
+  line-height: 32px;
+}
+
+blockquote span::before {
+  content: "-";
+}
+
+pre {
+  background-color: var(--gray50);
+  border: 8px solid var(--blue10);
+  box-shadow: -10px 10px 0 #ABAAF6;
+  border-radius: 8px;
+  padding: 40px;
+  font-size: 16px;
+  line-height: 24px;
+  color: var(--black10);
+  overflow-x: auto;
+  margin-block-end: 40px;
+  text-align: start;
+}
+
+
+.section-content ol {
+  padding-inline-start: 16px;
+}
+
+.section-content ol li {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: var(--gray10);
+}
+
+.section-content ul {
+  padding-inline-start: 16px;
+}
+
+.section-content ul li {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: var(--gray10);
+  margin-block-end: 16px;
+}
+
+.section-content ul li::marker {
+  color: var(--blue10);
+  font-size: 24px;
+}
+
+.slider {}
+
+.slider-container {
+  display: block;
+  overflow: hidden;
+  scroll-behavior: smooth;
+  white-space: nowrap;
+  font-size: 0;
+}
+
+.video {
+  margin: 0;
+  display: inline-block;
+  inline-size: 100%;
+  height: auto;
+  aspect-ratio: 16/9;
+}
+
+.slider-bullet-list {
+  text-align: center;
+  margin-block-start: 16px;
+}
+
+.slider-bullet {
+  width: 16px;
+  height: 16px;
+  display: inline-block;
+  background-color: var(--blue10);
+  border-radius: 50%;
+  margin-inline-end: 8px;
+}
+
+.form {}
+
+.form input {
+  display: inline-block;
+  box-sizing: border-box;
+  block-size: 48px;
+  border-radius: 90px;
+  padding-inline: 16px;
+  padding-block: 12px;
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 400;
+  border: 1px solid var(--black10);
+}
+
+.form input::placeholder {
+  color: var(--black10);
+}
+
+.form input[type="text"] {
+  inline-size: 100%;
+  margin-block-end: 16px;
+}
+
+.form input[type="email"] {
+  inline-size: 100%;
+  border-radius: 90px;
+}
+
+.form input[type="submit"] {
+  inline-size: 35.31%;
+  position: absolute;
+  right: 0;
+  top: 0;
+  background-color: var(--blue10);
+  border: 1px solid var(--blue10);
+  color: white;
+  border-radius: 90px;
+}
+
+.form-group {
+  margin-block-end: 16px;
+  position: relative;
+  height: 48px;
+}

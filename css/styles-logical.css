@@ -36,30 +36,34 @@ nav details summary {
 }
 
 h1 {
-  font-size: 40px;
-  margin-block-start: 20px;
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 100%;
+  margin-block-start: 40px;
   margin-block-end: 16px;
 }
 
 h2 {
-  /* font-size: 32px; */
-  font-size: 2em;
-  margin-block: 40px;
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 100%;
+  margin-block-start: 40px;
+  margin-block-end: 24px;
 }
 
 h3 {
-  /* font-size: 24px; */
-  font-size: 1.5em;
-  font-weight: 600;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 100%;
   margin-block: 16px;
 }
 
 p {
-  /* font-size: 16px; */
-  font-size: 1em;
+  font-size: 17px;
+  font-weight: 700;
+  line-height: 24px;
+  color: var(--white20);
 }
-
-.header {}
 
 .header-content {
   padding-inline: 20px;
@@ -76,10 +80,12 @@ pre {
   padding: 40px;
   overflow: auto;
   border-radius: 8px;
-  border: 10px solid #5551FF;
-  box-shadow: -10px 10px 0 #ABAAF6;
   margin-block-end: 30px;
-  border-start-start-radius: 30px;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 24px;
+  padding: 16px;
+  padding-block-end: 0;
 }
 
 p {
@@ -87,29 +93,59 @@ p {
 }
 
 .hero {
-  /* background-image: linear-gradient(to top, rgba(255, 255, 255, .38), transparent), url("../images/pattern.png"); */
   background-image: linear-gradient(96.07deg, #314755, 30.63%, #26A0DA 102.18%);
-  block-size: 50px;
-}
-
-.section-content {
-  counter-reset: titleList;
+  block-size: 100px;
 }
 
 .section-content img {
-  margin-block-start: 40px;
+  margin-block-start: 24px;
   display: block;
-  /* max-width: 100%; */
   max-inline-size: 100%;
+  inline-size: 48px;
+  block-size: 48px;
 }
 
 .section-content h3 {
   counter-increment: titleList;
 }
 
-.section-content h3::before {
-  content: counter(titleList, decimal) ". ";
+.section-content:not(:first-of-type) h3 {
+  margin-block-start: 24px;
 }
+
+.section-content:not(:first-of-type) img {
+  inline-size: 100%;
+  block-size: auto;
+  margin-block-start: 16px;
+  margin-block-end: 24px;
+}
+
+.section-content:nth-of-type(3) h3:first-of-type {
+  font-weight: 700;
+}
+
+.section-content ol {
+  padding-inline: 16px;
+}
+
+.section-content ul {
+  padding-inline: 16px;
+}
+
+.section-content ul li {
+  margin-block-end: 16px;
+}
+
+.section-content:nth-of-type(4) h2 {
+  margin-block-start: 24px;
+}
+
+.contact p {
+  color: var(--white);
+}
+
+
+
 
 /* .section-content h3::after {
   content: '';
@@ -125,24 +161,32 @@ hr {
 }
 
 blockquote {
-  margin-block-start: 80px;
-  margin-block-end: 63px;
+  margin-block-start: 40px;
+  margin-block-end: 40px;
+  margin-inline: 0;
   border-radius: 8px;
-  padding: 24px;
-  line-height: 32px;
-  font-size: 24px;
+  padding: 8px;
+  max-inline-size: 100%;
+  background-color: var(--white10);
 }
 
 blockquote p {
-  color: var(--white30)
+  color: var(--white30);
+  font-size: 17px;
+  line-height: 32px;
+  font-weight: 700;
 }
 
 .main hr {
   display: none;
 }
 
+.main hr:nth-of-type(2) {
+  display: block;
+}
+
 .main {
-  padding: 16px;
+  padding-inline: 16px;
 }
 
 .wrapper {
@@ -209,6 +253,14 @@ blockquote p {
 }
 
 @media screen and (min-width: 1366px) {
+  .main {
+    padding: 0;
+  }
+
+  .wrapper {
+    max-inline-size: 636px;
+  }
+
   .header {
     position: sticky;
     inset-block-start: -45px;
@@ -234,7 +286,80 @@ blockquote p {
   }
 
   h1 {
-    font-size: 60px;
+    font-size: 64px;
+    font-weight: 700;
     margin-block-start: 64px;
+  }
+
+  h2 {
+    font-size: 40px;
+    font-weight: 700;
+  }
+
+  h3 {
+    font-size: 32px;
+    font-weight: 600;
+  }
+
+  .section-content {
+    counter-reset: titleList;
+  }
+
+  .section-content:first-of-type h3::before {
+    content: counter(titleList, decimal) ". ";
+  }
+
+  .section-content:first-of-type img {
+    inline-size: 80px;
+    block-size: 80px;
+    margin-block-start: 40px;
+  }
+
+  .section-content:not(:first-of-type) h2 {
+    margin-block-end: 40px;
+  }
+
+  .section-content:not(:first-of-type) h3 {
+    margin-block-start: 40px;
+  }
+
+  .section-content:nth-of-type(3) h2 {
+    font-size: 32px;
+    font-weight: 600;
+    margin-block-start: 122.87px;
+  }
+
+  .section-content:nth-of-type(3) h3:first-of-type {
+    font-size: 24px;
+    font-weight: 400;
+  }
+
+  .section-content:nth-of-type(4) h2 {
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 100%;
+  }
+
+  .section-content:last-of-type h2 {
+    font-size: 24px;
+    font-weight: 400;
+  }
+
+  blockquote {
+    padding: 24px;
+    padding-inline-end: 17px;
+    margin-block-end: 64px;
+  }
+
+  blockquote p {
+    font-size: 24px;
+    font-weight: 400;
+  }
+
+  pre {
+    padding: 40px;
+    padding-inline-end: 64px;
+    font-size: 16px;
+    font-weight: 400;
   }
 }

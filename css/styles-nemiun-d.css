@@ -78,7 +78,11 @@ hr {
   margin-block: 40px;
 }
 
-hr:not(:first-of-type) {
+.main-hr {
+  display: none;
+}
+
+hr:not(:nth-of-type(2)) {
   display: none;
 }
 
@@ -285,7 +289,7 @@ pre {
   height: 48px;
 }
 
-@media (min-width: 768px) {
+@media (min-width: 1366px) {
   .main {
     padding-inline-start: 116px;
     padding-inline-end: 115px;
